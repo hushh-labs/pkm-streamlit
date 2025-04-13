@@ -20,7 +20,7 @@ for message in st.session_state.messages:
 # Function to send query to FastAPI and get a response
 def get_response_from_api(query):
     try:
-        params = {"hushh_id": 'cc15533b-48b4-4ea2-b53c-e788ab175f2f', "query": query}
+        params = {"hushh_id": 'cd5c1eb8-0db8-4c01-b486-bf6b090f15d9', "query": query}
         response = requests.get(API_URL, params=params)
         print(f"Raw response: {response.text}")  # Log raw response for debugging
         if response.status_code == 200:
